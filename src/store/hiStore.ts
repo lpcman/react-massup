@@ -1,8 +1,13 @@
-import {IHi} from "../types/hi";
+export interface IHi {
+  languageName: string;
+  enthusiasmLevel: number;
+}
 
-const storeHi: IHi = {
+export interface IHiStore {
+  hi: IHi
+}
+
+export const storeHi: IHi = {
     enthusiasmLevel: 2,
     languageName: 'React',
 };
-
-export default storeHi;

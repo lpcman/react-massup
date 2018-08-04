@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import * as actions from '../actions/helloAction';
 import Hello from '../components/Hello';
-import { IHelloStore } from '../types/hello';
+import { IHelloStore } from '../store/helloStore';
 
 export function mapStateToProps({ hello }: IHelloStore) {
     return {

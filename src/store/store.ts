@@ -1,10 +1,17 @@
-import {IStoreState} from "../types";
-import storeHello from "./helloStore";
-import storeHi from "./hiStore";
+import * as Hello from "./helloStore";
+import * as Hi from "./hiStore";
+import * as Locale from "./localeStore";
+
+export interface IStoreState {
+  hello: Hello.IHello,
+  hi: Hi.IHi,
+  locales: Locale.ILocale
+}
 
 const store: IStoreState = {
-    hello: storeHello,
-    hi: storeHi
+    hello: Hello.storeHello,
+    hi: Hi.storeHi,
+    locales: Locale.storeLocale
 };
 
 export default store;

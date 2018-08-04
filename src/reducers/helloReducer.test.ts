@@ -1,5 +1,5 @@
 import * as Actions from '../actions/helloAction';
-import { IHello } from "../types/hello";
+import { IHello } from "../store/helloStore";
 import { enthusiasm } from './helloReducer';
 
 const Mock: IHello =  {
