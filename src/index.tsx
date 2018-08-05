@@ -9,7 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 import routes from './routes/'
 import {history, store} from './store/'
 
-import './index.css';
+import './index.less';
 
 import * as ar from 'react-intl/locale-data/ar';
 import * as en from 'react-intl/locale-data/en';

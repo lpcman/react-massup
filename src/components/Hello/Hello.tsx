@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import './Hello.css';
+import './Hello.less';
 
 export interface IProps {
     name: string;

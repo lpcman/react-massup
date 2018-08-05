@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'react-router-dom'
 import Hi from '../../containers/Hi';
 import MainLayout from '../../layout/main/';
-import './Home.css';
+import './Home.less';
 
 const Home = () => (
   <MainLayout>
