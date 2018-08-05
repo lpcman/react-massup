@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Route, Switch} from 'react-router';
 import About from '../views/About';
-import Home from '../views/Home';
+import Home from '../views/home/';
 import I18N from '../views/i18n/';
 import NoMatch from '../views/NoMatch';
 
