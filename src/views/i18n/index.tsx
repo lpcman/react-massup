@@ -12,6 +12,8 @@ import {Dispatch} from "redux";
 import * as actions from '../../actions/localesAction';
 import {LOCALES_LANGS} from '../../locales/utils';
 
+import { DatePicker, Pagination } from 'antd';
+
 import {ILocaleStore} from "../../store/localeStore";
 
 export interface IProps {
@@ -89,6 +91,8 @@ const App = ({intl, locale, changeLocale}: IProps) => (
           }}
         />
       </h5>
+      <DatePicker />
+      <Pagination showQuickJumper={true} defaultCurrent={2} total={500} />
     </div>
   </div>
 );

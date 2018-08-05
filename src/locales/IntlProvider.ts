@@ -1,15 +1,8 @@
 import {IntlProvider} from 'react-intl';
 import {connect} from 'react-redux';
+import {ILocaleStore} from "../store/localeStore";
 
-interface ILocales {
-  locales: {
-    locale: string,
-    messages: object
-  }
-}
-
-// @tslint disable
-const mapStateToProps = ({locales: {locale, messages}}: ILocales) => ({
+const mapStateToProps = ({locales: {locale, messages}}: ILocaleStore) => ({
   key: locale,
   locale,
   messages
