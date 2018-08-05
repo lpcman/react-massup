@@ -15,7 +15,7 @@ function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: IProps) 
     }
     console.log("render"); // tslint:disable-line
     return (
-        <div className="hello">
+        <div className="Hello">
             <div className="greeting">
                 Hello {name + getExclamationMarks(enthusiasmLevel)}
             </div>
